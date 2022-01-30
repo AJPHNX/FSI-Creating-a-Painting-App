@@ -18,7 +18,8 @@ painting.addEventListener('click', function(e){
 painting.addEventListener('dblclick', function(e){
     console.log('Turn white')
     console.log(e.target)
-    e.target.style.backgroundColor  = 'white'
+    if (e.target.style.backgroundColor != 'white'){
+    e.target.style.backgroundColor  = 'white'}
     //e.target.style.backgroundColor = `${selectedColor}`
     console.log(`Square cleared`)
     
